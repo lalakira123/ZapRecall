@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Recursive', sans-serif;
     background-color: #FB6B6B; 
 }
 
@@ -28,6 +28,7 @@ body {
 }
 
 h1 {
+    font-family: 'Righteous', cursive;
     font-size: 25px;
     font-weight: 500;
     color: #FFFFFF;
@@ -60,7 +61,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 header h2 {
@@ -99,6 +100,55 @@ header h2 {
     font-size: 13px;
     z-index: 0;
 }
+
+.card.pergunta {
+    position: relative;
+    background-color: #FFFFD4;
+    height: 80px;
+    align-items:flex-start;
+}
+
+.card.pergunta img {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+.card.resposta {
+    flex-direction: column;
+    background-color: #FFFFD4;
+    height: 80px;
+    align-items:flex-start;
+}
+
+.card.resposta div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card.resposta div button {
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    width: 55px;
+    height: 24px;
+    font-size: 7px;
+}
+
+.card.resposta div button.vermelho {
+    background-color: #FF3030;
+}
+
+.card.resposta div button.amarelo {
+    background-color: #FF922E;
+}
+
+.card.resposta div button.verde {
+    background-color: #2FBE34;
+}
+
 
 /*-- Footer --*/
 footer {
