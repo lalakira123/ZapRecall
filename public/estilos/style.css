@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FB6B6B; 
+}
+
+/*-- Tela Inicial --*/
+.tela-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.logo-inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-inicial img {
+    width: 55px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.botao-inicio {
+    background-color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    color: #D70900;
+    width: 141px;
+    height: 31px;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+/*-- Tela 2 --*/
+/*Header*/
+header {
+    background-color: #FB6B6B;
+    height: 70px;
+    padding: 20px 0px 0px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+header h2 {
+    color: #FFFFFF;
+    font-size: 20pxs;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+/*Cards*/
+.cards {
+    margin-top: 90px;
+    margin-bottom: 70px;
+    padding: 0px 10px 0px 10px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card ion-icon {
+    font-size: 13px;
+    z-index: 0;
+}
+
+/*-- Footer --*/
+footer {
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+footer p {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 500;
+}
