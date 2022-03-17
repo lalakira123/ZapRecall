@@ -1,5 +1,9 @@
 import React from "react";
 
+import CardNumber from "./CardNumber";
+import CardPergunta from "./CardPergunta";
+import CardResposta from "./CardResposta";
+
 function Card(props) {
     const [carta, setCarta] = React.useState("card");
     const [pergunta, setPergunta] = React.useState("card pergunta escondido");
@@ -42,27 +46,13 @@ function Card(props) {
 
     return (
         <>
-            <div className={carta}>
-                <p>Pergunta {props.indice}</p>
-                <img className={jogo} onClick={mostrarPergunta} src="./image/play.png" alt="play"/>
-                <img className={verde} src="./image/check.png" alt="check"/>
-                <img className={amarelo} src="./image/interrogation.png" alt="interrogation"/>
-                <img className={vermelho} src="./image/x.png" alt="x"/>
-            </div>
-
-            <div className={pergunta}>
-                <p>{props.questao}</p>
-                <img onClick={mostrarResposta} src="./image/setinha.png" alt="virar"/>
-            </div>
-
-            <div className={resposta}>
-                <p>{props.resposta}</p>
-                <div>
-                    <button className="vermelho" onClick={classificarVermelho}>Não lembrei</button>
-                    <button className="amarelo" onClick={classificarAmarelo}>Quase não lembrei</button>
-                    <button className="verde" onClick={classificarVerde}>Zap!</button>
-                </div>
-            </div>
+            <CardNumber card={carta} number={props.indice} jogo={jogo} 
+            vermelho={vermelho} verde={verde} amarelo={amarelo} funcao={mostrarPergunta}/>
+            
+            <CardPergunta classe={pergunta} questao={props.questao} funcao={mostrarResposta}/>
+            
+            <CardResposta classe={resposta} resposta={props.resposta} funcaoVermelho={classificarVermelho}
+            funcaoVerde={classificarVerde} funcaoAmarelo={classificarAmarelo}/>
         </>
     )
 }
