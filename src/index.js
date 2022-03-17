@@ -1,13 +1,13 @@
 import ReactDOM from "react-dom";
 
-import TelaInicial from "./components/TelaInicial";
+import Telas from "./components/Telas";
 
 function App() {
     return (
         <>
-            <TelaInicial />
+            <Telas />
         </>
     );
 }
 
-//ReactDOM.render(<App />, document.querySelector(".root"));
+ReactDOM.render(<App />, document.querySelector(".root"));

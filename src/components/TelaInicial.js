@@ -1,16 +1,14 @@
-function  TelaInicial() {
-    function trocarTela() {
-        
-    }
-
+function TelaInicial(props) {
     return (
-        <div class="tela-inicial">
-            <div class="logo-inicial">
-                <img src="./image/logo.png" alt="ZapRecall"/>
-                <h1>ZapRecall</h1>
+        <>
+            <div className={props.tela}>
+                <div className="logo-inicial">
+                    <img src="./image/logo.png" alt="ZapRecall"/>
+                    <h1>ZapRecall</h1>
+                </div>
+                <button className="botao-inicio" onClick={props.funcao}>Iniciar Recall!</button>
             </div>
-            <button class="botao-inicio" onClick={trocarTela}>Iniciar Recall!</button>
-        </div>
+        </>
     );
 }
 
