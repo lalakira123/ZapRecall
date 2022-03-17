@@ -11,6 +11,12 @@ const infosCard = [
     {Q: "Usamos estado (state) para __", R:"dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"}
 ];
 
+function comparador() { 
+	return Math.random() - 0.5; 
+}
+
+infosCard.sort(comparador);
+
 function Cards () {
     return (
         <>
