@@ -101,6 +101,21 @@ header h2 {
     z-index: 0;
 }
 
+.card.vermelho p{
+    color: #D70900;
+    text-decoration: line-through;
+}
+
+.card.amarelo p{
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.card.verde p{
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
 .card.pergunta {
     position: relative;
     background-color: #FFFFD4;
@@ -148,7 +163,6 @@ header h2 {
 .card.resposta div button.verde {
     background-color: #2FBE34;
 }
-
 
 /*-- Footer --*/
 footer {
