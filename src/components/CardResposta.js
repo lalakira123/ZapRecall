@@ -1,12 +1,32 @@
 function CardResposta(props) {
-    return(
+    const {classe, resposta, funcaoVermelho, funcaoVerde, funcaoAmarelo, atualizar, acrescentar} = props;
+
+    function atualizarValorVermelho() {
+        funcaoVermelho();
+        atualizar(1);
+        acrescentar("selecionadoVermelho")
+    }
+
+    function atualizarValorAmarelo() {
+        funcaoAmarelo();
+        atualizar(1);
+        acrescentar("selecionadoAmarelo")
+    }
+
+    function atualizarValorVerde() {
+        funcaoVerde();
+        atualizar(1);
+        acrescentar("selecionadoVerde")
+    }
+
+    return (
         <>
-            <div className={props.classe}>
-                <p>{props.resposta}</p>
+            <div className={classe}>
+                <p>{resposta}</p>
                 <div>
-                    <button className="vermelho" onClick={props.funcaoVermelho}>Não lembrei</button>
-                    <button className="amarelo" onClick={props.funcaoAmarelo}>Quase não lembrei</button>
-                    <button className="verde" onClick={props.funcaoVerde}>Zap!</button>
+                    <button className="vermelho" onClick={atualizarValorVermelho}>Não lembrei</button>
+                    <button className="amarelo" onClick={atualizarValorAmarelo}>Quase não lembrei</button>
+                    <button className="verde" onClick={atualizarValorVerde}>Zap!</button>
                 </div>
             </div>
         </>

@@ -8,8 +8,8 @@ function Telas() {
     const [aparece, setAparece] = React.useState("tela-dois escondido")
 
     function trocarTela() {
-        setEsconde("tela-inicial escondido")
-        setAparece("tela-dois")
+        setEsconde("tela-inicial escondido");
+        setAparece("tela-dois");
     }
 
     return (

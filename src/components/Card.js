@@ -52,7 +52,8 @@ function Card(props) {
             <CardPergunta classe={pergunta} questao={props.questao} funcao={mostrarResposta}/>
             
             <CardResposta classe={resposta} resposta={props.resposta} funcaoVermelho={classificarVermelho}
-            funcaoVerde={classificarVerde} funcaoAmarelo={classificarAmarelo}/>
+            funcaoVerde={classificarVerde} funcaoAmarelo={classificarAmarelo} atualizar={props.atualizar}
+            acrescentar={props.acrescentar}/>
         </>
     )
 }

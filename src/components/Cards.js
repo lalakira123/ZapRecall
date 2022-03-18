@@ -17,11 +17,19 @@ function comparador() {
 
 infosCard.sort(comparador);
 
-function Cards () {
+function Cards (props) {
     return (
         <>
             <main className="cards">
-                {infosCard.map((info, index) => <Card key={index} questao={info.Q} resposta={info.R} indice={index + 1}/>)}
+                {infosCard.map((info, index) => 
+                <Card 
+                    key={index} 
+                    questao={info.Q} 
+                    resposta={info.R} 
+                    indice={index + 1}
+                    atualizar={props.atualizar}
+                    acrescentar={props.acrescentar}
+                    />)}
             </main>
         </>
     )

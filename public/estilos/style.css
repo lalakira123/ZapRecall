@@ -173,6 +173,7 @@ footer {
     left: 0;
     right: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 50px;
@@ -182,6 +183,11 @@ footer p {
     color: #333333;
     font-size: 12px;
     font-weight: 500;
+    margin-bottom: 5px;
+}
+
+footer img {
+    margin-right: 5px;
 }
 
 /*-- Escondido --*/
