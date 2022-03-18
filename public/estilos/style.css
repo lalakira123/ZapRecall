@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 170px;
 }
 
 .logo-inicial {
@@ -24,28 +24,29 @@ body {
 }
 
 .logo-inicial img {
-    width: 55px;
+    width: 136px;
 }
 
 h1 {
     font-family: 'Righteous', cursive;
-    font-size: 25px;
+    font-size: 36px;
     font-weight: 500;
     color: #FFFFFF;
     padding: 10px;
 }
 
 .botao-inicio {
+    font-family: 'Recursive', sans-serif;
     background-color: #FFFFFF;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 500;
     color: #D70900;
-    width: 141px;
-    height: 31px;
+    width: 246px;
+    height: 54px;
     border: 1px solid #D70900;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    margin-top: 100px;
+    margin-top: 46px;
 }
 
 .botao-inicio:hover {
@@ -56,7 +57,7 @@ h1 {
 /*Header*/
 header {
     background-color: #FB6B6B;
-    height: 70px;
+    height: 90px;
     padding: 20px 0px 0px 0px;
     position: fixed;
     top: 0;
@@ -71,15 +72,18 @@ header {
 header h2 {
     font-family: 'Righteous', cursive;
     color: #FFFFFF;
-    font-size: 20pxs;
+    font-size: 36px;
     font-weight: 500;
     padding-left: 5px;
 }
 
+header img {
+    width: 52px;
+}
 /*Cards*/
 .cards {
-    margin-top: 90px;
-    margin-bottom: 70px;
+    margin-top: 110px;
+    margin-bottom: 90px;
     padding: 0px 10px 0px 10px;
 }
 
@@ -90,7 +94,7 @@ header h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 40px;
+    height: 65px;
     padding: 12px;
     margin-bottom: 5px;
 }
@@ -101,8 +105,12 @@ header h2 {
 
 .card p {
     color: #333333;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
+}
+
+.card img {
+    width: 20px;
 }
 
 .card.vermelho p{
@@ -125,10 +133,12 @@ header h2 {
     background-color: #FFFFD4;
     height: 80px;
     align-items:flex-start;
+    font-size: 18px;
 }
 
 .card.pergunta img {
     position: absolute;
+    width: 30px;
     right: 8px;
     bottom: 8px;
 }
@@ -136,7 +146,7 @@ header h2 {
 .card.resposta {
     flex-direction: column;
     background-color: #FFFFD4;
-    height: 80px;
+    height: 131px;
     align-items:flex-start;
 }
 
@@ -151,9 +161,9 @@ header h2 {
     border-radius: 5px;
     border: none;
     box-shadow: none;
-    width: 25%;
-    height: 24px;
-    font-size: 7px;
+    width: 86px;
+    height: 38px;
+    font-size: 12px;
 }
 
 .card.resposta div button.vermelho {
@@ -181,11 +191,12 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 16px;
+    font-size: 18px;
 }
 
 footer p {
     color: #333333;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -231,16 +242,6 @@ button {
 }
 
 @media (min-width: 350px) {
-    /*-- Tela inicial --*/
-    h1 {
-        font-size: 35px;
-    }
-
-    /*-- Header --*/
-    header h2 {
-        font-size: 32px;
-    }
-    
     /*-- Cards --*/
     .cards {
         display: flex;
@@ -251,11 +252,5 @@ button {
 
     .card {
         width: 340px;
-        height: 55px;
-    }
-
-    /*-- Footer --*/
-    footer {
-        font-size: 19px;
     }
 }
