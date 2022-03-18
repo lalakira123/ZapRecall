@@ -48,6 +48,10 @@ h1 {
     margin-top: 100px;
 }
 
+.botao-inicio:hover {
+    cursor: pointer;
+}
+
 /*-- Tela 2 --*/
 /*Header*/
 header {
@@ -91,15 +95,14 @@ header h2 {
     margin-bottom: 5px;
 }
 
+.card img:hover {
+    cursor: pointer;
+}
+
 .card p {
     color: #333333;
     font-size: 12px;
     font-weight: 700;
-}
-
-.card ion-icon {
-    font-size: 13px;
-    z-index: 0;
 }
 
 .card.vermelho p{
@@ -220,4 +223,39 @@ footer img {
 /*-- Escondido --*/
 .escondido {
     display: none;
+}
+
+/*-- Botão --*/
+button {
+    cursor: pointer;
+}
+
+@media (min-width: 350px) {
+    /*-- Tela inicial --*/
+    h1 {
+        font-size: 35px;
+    }
+
+    /*-- Header --*/
+    header h2 {
+        font-size: 32px;
+    }
+    
+    /*-- Cards --*/
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 340px;
+        height: 55px;
+    }
+
+    /*-- Footer --*/
+    footer {
+        font-size: 19px;
+    }
 }
