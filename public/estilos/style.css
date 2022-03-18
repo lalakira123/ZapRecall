@@ -65,6 +65,7 @@ header {
 }
 
 header h2 {
+    font-family: 'Righteous', cursive;
     color: #FFFFFF;
     font-size: 20pxs;
     font-weight: 500;
@@ -176,7 +177,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    padding: 16px;
 }
 
 footer p {
@@ -184,6 +185,32 @@ footer p {
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 5px;
+}
+
+footer .resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .resultado .emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+footer .resultado .emoji p {
+    font-weight: 700;
+}
+
+footer .resultado .mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
 }
 
 footer img {
