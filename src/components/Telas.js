@@ -4,8 +4,8 @@ import TelaInicial from "./TelaInicial";
 import TelaDois from "./TelaDois";
 
 function Telas() {
-    const [escondido, setEsconde] = React.useState("tela-inicial")
-    const [aparece, setAparece] = React.useState("tela-dois escondido")
+    const [escondido, setEsconde] = React.useState("tela-inicial");
+    const [aparece, setAparece] = React.useState("tela-dois escondido");
 
     function trocarTela() {
         setEsconde("tela-inicial escondido");

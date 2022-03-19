@@ -4,19 +4,19 @@ function CardResposta(props) {
     function atualizarValorVermelho() {
         funcaoVermelho();
         atualizar(1);
-        acrescentar("selecionadoVermelho")
+        acrescentar("selecionadoVermelho");
     }
 
     function atualizarValorAmarelo() {
         funcaoAmarelo();
         atualizar(1);
-        acrescentar("selecionadoAmarelo")
+        acrescentar("selecionadoAmarelo");
     }
 
     function atualizarValorVerde() {
         funcaoVerde();
         atualizar(1);
-        acrescentar("selecionadoVerde")
+        acrescentar("selecionadoVerde");
     }
 
     return (
